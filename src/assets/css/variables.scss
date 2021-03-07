@@ -1,0 +1,43 @@
+@mixin transform-rotate($x){
+	-webkit-transform: rotate($x); 
+	-moz-transform: rotate($x); 
+	-o-transform: rotate($x); 
+	-ms-transform: rotate($x); 
+	transform: rotate($x); 
+}
+@mixin flex-center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@mixin transform-translateX($x){
+	-webkit-transform: translateX($x); 
+	-moz-transform: translateX($x); 
+	-o-transform: translateX($x); 
+	-ms-transform: translateX($x); 
+	transform: translateX($x); 
+}
+@mixin transform-translateY($x){
+	-webkit-transform: translateY($x); 
+	-moz-transform: translateY($x); 
+	-o-transform: translateY($x); 
+	-ms-transform: translateY($x);
+	transform: translateY($x); 
+}
+@mixin box-shadow($x, $y, $z, $a, $b){
+	-webkit-box-shadow: $x , $y $z $a $b; 
+    -moz-box-shadow: $x $y $z $a $b; 
+    box-shadow: $x $y $z $a $b;
+}
+@mixin transition( $time , $all , $ease-in-out ){
+	-webkit-transition: $time $all $ease-in-out;
+    -o-transition: $time $all $ease-in-out;
+    transition: $time $all $ease-in-out;
+}
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}

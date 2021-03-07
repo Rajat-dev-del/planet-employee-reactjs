@@ -1,0 +1,94 @@
+footer{
+    background-color: #012625;
+    padding-top: 127px;
+    overflow: hidden;
+    position: relative;
+    .social-links-footer{
+       h3{
+        color: #FFFFFF;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: -0.58px;
+        line-height: 25px;
+        margin-bottom: 21px;
+       } 
+       ul{
+           li{
+               display: inline;
+               margin-right: 14px;
+               a{
+                   text-decoration: none;
+               }
+           }
+       } 
+    }
+    .footer-links{
+        h3{
+            color: #00CED1;
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.57px;
+            line-height: 29px;
+            @media only screen and (max-width:1199px){
+                margin: 30px 0px 10px;
+            }
+        }
+        ul{
+            li{
+                a{
+                    color: #FFFFFF;
+                    font-family: "Josefin Sans";
+                    font-size: 18px;
+                    letter-spacing: 0.56px;
+                    line-height: 34px;
+                    text-decoration: none;
+                }
+            }
+        } 
+    }
+    .copyright{
+        position: relative;
+        padding-bottom: 26px;
+        p{
+            color:rgba(24, 178, 180, 0.62);
+            font-family: "Josefin Sans";
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 34px;
+        }
+        @media only screen and (max-width:1199px){
+            margin: 10px 0px 0px;
+        }
+    }
+    &:before{
+        position: absolute;
+        content: '';
+        width: 40%;
+        height: 126%;
+        background-color: #072c34;
+        border-radius: 75px;
+        top: 0;
+        left: -10%;
+        transform: rotate(53deg);
+        @media only screen and (min-width:1600px){
+            width: 50%;
+            height: 168%;
+            left: -10%;
+            transform: rotate(36deg);
+        }
+        @media only screen and (max-width:1600px){
+            width: 50%;
+            height: 135%;
+            left: -10%;
+            transform: rotate(50deg);
+        }
+        @media only screen and (max-width:1200px){
+          display: none;
+        }
+       
+    }
+    @media only screen and (max-width:1199px){
+        text-align:center;
+    }
+
+}
